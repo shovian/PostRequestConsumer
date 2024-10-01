@@ -10,9 +10,9 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
 	const data = await request.json();
+	console.log(data);
 	// Handle POST request
 	return NextResponse.json({
 		something: 'hi, im from https api',
-		received: data,
 	});
 }
