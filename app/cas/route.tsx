@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
+    const data = await request.json();
+    console.log(data);
+    
 	// Handle GET request
 	return NextResponse.json({ message: 'Hello from the /app/cas route!' });
 }
